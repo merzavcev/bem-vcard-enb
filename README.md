@@ -15,7 +15,7 @@
 * корректная поддержка различных разрешений на мобильных устройствах;
 * поддержка [Person microdata](http://www.data-vocabulary.org/Person).
 
-##Development
+## Development
 ```bash
 git clone https://github.com/sbmaxx/bem-vcard-enb.git
 cd bem-vcard-enb
@@ -24,7 +24,7 @@ npm start
 ```
 Свои данные изменять в `data.js` в корне проекта.
 
-##Production
+## Production
 ```bash
 npm run prod
 ```
