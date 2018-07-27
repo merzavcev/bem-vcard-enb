@@ -248,7 +248,7 @@ block('card')(
             elem: 'gap'
         });
 
-        ['skype', 'github', 'twitter'].filter((prop) => data[prop]).forEach(function(prop) {
+        ['skype', 'github', 'instagram', 'twitter', 'facebook'].filter((prop) => data[prop]).forEach(function(prop) {
             content.push({
                 elem: prop,
                 content: data[prop]
@@ -290,7 +290,7 @@ block('card')(
         return {
             elem: 'link',
             url: 'https://github.com/' + this.ctx.content,
-            content: 'github.com/' + this.ctx.content
+            content: 'github.com'
         };
     }),
 
@@ -311,11 +311,27 @@ block('card')(
         ];
     }),
 
+    elem('instagram').content()(function() {
+        return {
+            elem: 'link',
+            url: 'https://www.instagram.com/' + this.ctx.content,
+            content: 'instagram'
+        };
+    }),
+
     elem('twitter').content()(function() {
         return {
             elem: 'link',
             url: 'https://twitter.com/' + this.ctx.content,
-            content: 'twitter.com/' + this.ctx.content
+            content: 'twitter'
+        };
+    }),
+
+    elem('facebook').content()(function() {
+        return {
+            elem: 'link',
+            url: 'https://facebook.com/' + this.ctx.content,
+            content: 'facebook.com'
         };
     }),
 
